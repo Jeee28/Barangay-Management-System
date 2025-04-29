@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Barangay Malabanban Norte</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Barangay Logo" class="logo">
+    </header>
+    
+    <main> 
+                <div class="form-box register hidden">
+                  <h2>Register</h2>
+                  <form id="registerForm">
+                    <div class="input-box">
+                      <label>Full Name</label>
+                      <input type="text" required name="name" />
+                      
+                    </div>
+                    <div class="input-box">
+                     <label>Email</label> 
+                     <input type="email" required name="registerEmail" />
+                      
+                    </div>
+                    <div class="input-box">
+                     <label>Password</label> 
+                     <input type="password" required name="registerPassword" />
+                      <br><br>
+                    </div>
+                    <div class="input-box">
+                      <select name="role" required>
+                        <option value="" disabled selected>Select Role</option>
+                        <option value="Nutritionist">Nutritionist</option>
+                        <option value="Doctor">Doctor</option>
+                        <option value="Midwife">Midwife</option>
+                        <option value="Barangay Health Worker">Barangay Health Worker</option>
+                      </select>
+                      <br><br><br>
+                    </div>
+                    <button type="submit" class="btn">Register</button><br><br>
+                    <p>Already have an account? <a href="login.html" onclick="showLogin()">Login</a></p>
+                  </form>
+                </div>
+              </div>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Barangay Malabanban Norte. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

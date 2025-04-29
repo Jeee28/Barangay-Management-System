@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management System</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo-container">
+                <img src="logo.jpg" alt="Barangay Logo" class="logo">
+            </div>
+            <div class="menu-items">
+                <div class="menu-item"><a href="dashboard.html">Dashboard</a></div>
+                
+                <div class="menu-item dropdown">
+                    <span class="dropdown-toggle">Healthcare Management</span>
+                    <div class="dropdown-content">
+                        <a href="children-record.html">Children Record</a>
+                        <a href="pregnant-record.html">Pregnant Record</a>
+                    </div>
+                </div>
+                
+                <div class="menu-item"><a href="records.html">Record Management</a></div>
+                <div class="menu-item"><a href="inventory.html">Inventory Management</a></div>
+                <div class="menu-item"><a href="complain.html">Complain</a></div>
+                <div class="menu-item"><a href="appointments.html">Appointment Schedule</a></div>
+                <div class="menu-item"><a href="reports.html">Generate Reports</a></div>
+                <div class="menu-item active"><a href="analytics.html">Analytics</a></div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <div class="header-title">Barangay Management System</div>
+                <div class="header-actions">
+                    <div class="header-icon">🔔</div>
+                    <div class="header-icon">✉️</div>
+                    <div class="user-avatar">👤</div>
+                </div>
+            </div>
+            <div class="dashboard-title">Analytics</div>
+            <div class="dashboard-content">
+                <div class="main-chart">
+                    <div class="cloud cloud1"></div>
+                    <div class="cloud cloud2"></div>
+                    <div class="wave"></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
