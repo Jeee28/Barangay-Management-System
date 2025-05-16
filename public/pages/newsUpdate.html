@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barangay News</title>
+  <link rel="stylesheet" href="./../css/styles.css">
+  <link rel="stylesheet" href="./../css/new.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+        <img src="./../assets/logo/logo.jpg" alt="Barangay Logo" class="logo">
+        <h1>Barangay Malabanban Norte Candelaria Quezon</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="./../index.html">Home</a></li>
+            <li><a href="newsUpdate.html">News</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="complaint.html">Complaint</a></li>
+            <li><a href="appointment.html">Set Appointment</a></li>
+            <li><a href="requestdocuments.html">Request Documents</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <main class="news-container">
+    <article class="news-card">
+      <img src="./../assets/logo/vietnam.jpg" alt="News 1">
+      <div class="news-content">
+        <h2>Health Mission Scheduled This Weekend</h2>
+        <p class="news-summary">A medical mission will be held at the barangay hall to offer free check-ups and medicines...</p>
+        <button onclick="toggleNews(this)">Read more</button>
+        <p class="news-full hidden">This Saturday, doctors and nurses from the city health office will offer free medical services including blood pressure checks, diabetes screening, and free vitamins for kids and seniors.</p>
+      </div>
+    </article>
+
+    <article class="news-card">
+      <img src="./../assets/logo/vietnam.jpg" alt="News 2">
+      <div class="news-content">
+        <h2>Cleanup Drive Success</h2>
+        <p class="news-summary">Residents joined the barangay-wide cleanup drive, clearing streets, canals, and parks...</p>
+        <button onclick="toggleNews(this)">Read more</button>
+        <p class="news-full hidden">Thanks to the participation of volunteers, more than 20 sacks of garbage were collected. The barangay captain thanked all who participated and emphasized the importance of cleanliness and unity.</p>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    function toggleNews(btn) {
+      const fullText = btn.nextElementSibling;
+      fullText.classList.toggle('hidden');
+      btn.textContent = fullText.classList.contains('hidden') ? 'Read more' : 'Show less';
+    }
+  </script>
+</body>
+</html>

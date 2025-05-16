@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="./../css/dashboard.css">
+    <link rel="stylesheet" href="./../css/appointment.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
-    <div class="container">
+
+    <div class="container-main">
         <div class="sidebar" id="sidebar">
             <div class="logo-container">
-                <img src="logo.jpg" alt="Barangay Logo" class="logo">
+                <img src="./../assets/logo/logo.jpg" alt="Barangay Logo" class="logo">
             </div>
             <div class="menu-items">
                 <div class="menu-item active"><a href="dashboard.html">Dashboard</a></div>
@@ -20,10 +23,10 @@
                     <div class="dropdown-content">
                         <a href="children-record.html">Children Record</a>
                         <a href="pregnant-record.html">Pregnant Record</a>
-                        <a href="inventory.html"> Inventory</a>
-                        <a href="reports.html">Generate Reports</a>
-                        <a href="analytics.html">Analytics</a>
-                    </div>
+                        <a href="household-record.html">Household Record</a>
+                        <a href="healthcare_inventory.html"> Inventory Records</a>
+                       
+                      </div>
                 </div>
                 
                 <div class="menu-item dropdown">
@@ -32,13 +35,14 @@
                         <a href="household-record.html">Household Record</a>
                         <a href="issuance-record.html">Issuance Record</a>
                         <a href="complain.html">Complain</a>
-                        <a href="appointments.html">Appointment Schedule</a>
-                        <a href="reports.html">Generate Reports</a>
-                        <a href="analytics.html">Analytics</a>
+                        <a href="appointmentsRecord.html">Appointment Record</a>
+                        <a href="capAvailability.html">Availability</a>
+                        
                         <a href="inventory.html">Inventory Management</a>
                     </div>
                 </div>
                 <div class="menu-item"><a href="settings.html">Setiings</a></div>
+                <div class="menu-item"> <a href="./../index.html">Logout</a></div>
             </div>
         </div>
         
@@ -53,17 +57,28 @@
                     <div class="user-avatar">👤</div>
                 </div>
             </div>
-            <div class="dashboard-title">Appointment Schedule</div>
+            <div class="dashboard-title">Captain Availability</div>
             <div class="dashboard-content">
-                <div class="main-chart">
-                    <div class="cloud cloud1"></div>
-                    <div class="cloud cloud2"></div>
-                    <div class="wave"></div>
-                </div>
-             
+               
+            <div class="admin-panel">
+        <h2>Captain's Availability Panel</h2>
+        <label for="admin-date">Set your available times for:</label>
+        <input type="date" id="admin-date" onchange="loadAdminSlots()">
+    
+        <div class="admin-timeslots" id="admin-slots"></div>
+    
+        <button onclick="saveSchedule()">Save Schedule</button>
+      </div>
+    
+      <div class="schedule-display">
+        <h2>📅 Scheduled Availability</h2>
+        <ul id="schedule-list"></ul>
+      </div>
+                
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./../js/appointment.js"></script>
 </body>
-</html>
+</html> 
+

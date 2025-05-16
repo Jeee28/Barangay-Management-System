@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Set Appointment - Barangay Malabanban Norte</title>
     <link rel="stylesheet" href="./../css/styles.css">
+    <link rel="stylesheet" href="./../css/appointment.css">
     
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="logo.jpg" alt="Barangay Logo" class="logo">
+            <img src="./../assets/logo/logo.jpg" alt="Barangay Logo" class="logo">
             <h1>Barangay Malabanban Norte Candelaria Quezon</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="./../index.html">Home</a></li>
+                <li><a href="newsUpdate.html">News</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="complaint.html">Complaint</a></li>
                 <li><a href="appointment.html">Set Appointment</a></li>
+                <li><a href="requestdocuments.html">Request Documents</a></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
@@ -31,49 +34,35 @@
             <p>Use this form to schedule an appointment with barangay officials. Please provide the details below and we will confirm your appointment via email or phone.</p>
             
             <form id="appointment-form" onsubmit="return setAppointment()">
-                <div class="form-group">
-                    <label for="name">Full Name *</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+                <div class="container">
+                    <h2>Book an Appointment</h2>
                 
-                <div class="form-group">
-                    <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+                    <label for="purpose">Purpose of Appointment:</label>
+                    <input type="text" id="fullname" placeholder="Enter your purpose">
                 
-                <div class="form-group">
-                    <label for="phone">Phone Number *</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" placeholder="Enter your full name">
                 
-                <div class="form-group">
-                    <label for="date">Preferred Date *</label>
-                    <input type="date" id="date" name="date" required>
-                </div>
+                    <label for="address">Address / Zone / Purok:</label>
+                    <input type="text" id="address" placeholder="Enter your address">
                 
-                <div class="form-group">
-                    <label for="time">Preferred Time *</label>
-                    <select id="time" name="time" required>
-                        <option value="">Select time</option>
-                        <option value="morning">Morning (9:00 AM - 11:30 AM)</option>
-                        <option value="afternoon">Afternoon (1:30 PM - 4:00 PM)</option>
-                    </select>
-                </div>
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" id="contact" placeholder="Enter your contact number">
+                    
+                  <form action="/upload" method="POST" enctype="multipart/form-data">
+                  <label for="photo">Upload Photo or ID:</label>
+                  <input type="file" name="file" id="file" required />
+                </form>
                 
-                <div class="form-group">
-                    <label for="official">Official to Meet (if specific)</label>
-                    <select id="official" name="official">
-                        <option value="">Any available official</option>
-                        <option value="captain">Barangay Captain</option>
-                    </select>
-                </div>
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" onchange="loadAvailableSlots()">
                 
-                <div class="form-group">
-                    <label for="purpose">Purpose of Appointment *</label>
-                    <textarea id="purpose" name="purpose" rows="4" required></textarea>
-                </div>
+                    <label>Preferred Time Slot:</label>
+                    <div class="timeslots" id="slots"></div>
+                  
                 
-                <button type="submit">Request Appointment</button>
+                    <button onclick="confirmAppointment()">Confirm Appointment</button>
+                  </div>
             </form>
         </section>
     </main>
@@ -82,6 +71,6 @@
         <p>&copy; 2025 Barangay Malabanban Norte. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./../js/appointment.js"></script>
 </body>
 </html>

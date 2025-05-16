@@ -83,7 +83,7 @@ body {
 
 .dropdown-content.active {
     display: block;
-    max-height: 200px;
+    max-height: 500px; /* Increase this value to accommodate more items */
 }
 
 .dropdown-content a {
@@ -285,3 +285,4 @@ body {
 td a {
     text-decoration: none;
 }
+

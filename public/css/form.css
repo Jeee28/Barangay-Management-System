@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    max-width: 700px;
+    border: 1px solid #aaa;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  h2 {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+  }
+  fieldset {
+    border: 2px solid #003366;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  legend {
+    font-weight: bold;
+    color: white;
+    background: #003366;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  input {
+    width: 95%;
+    padding: 5px;
+  }
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-row div {
+    width: 48%;
+  }
+  .save-btn {
+    float: right;
+    background: #3366cc;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  .save-btn:hover {
+    background: #254a9e;
+  }

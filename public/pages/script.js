@@ -119,3 +119,12 @@ document.head.appendChild(calendarStyles);
 
 // Generate the calendar
 generateCalendar();
+
+function confirmLogout(event) {
+    event.preventDefault(); // Prevent link from jumping immediately
+    const confirmed = confirm("Are you sure you want to logout?");
+    if (confirmed) {
+      localStorage.clear();
+      window.location.href = "./../index.html";
+    }
+  }
