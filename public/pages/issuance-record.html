@@ -28,31 +28,23 @@
                 <img src="./../assets/logo/logo.jpg" alt="Barangay Logo" class="logo">
             </div>
             <div class="menu-items">
-                <div class="menu-item active"><a href="dashboard.html">Dashboard</a></div>
-                
-                <div class="menu-item dropdown">
-                    <span class="dropdown-toggle">Healthcare Management</span>
-                    <div class="dropdown-content">
-                        <a href="children-record.html">Children Record</a>
-                        <a href="pregnant-record.html">Pregnant Record</a>
-                        <a href="household-record.html">Household Record</a>
-                        <a href="healthcare_inventory.html"> Inventory Records</a>
-                       
-                      </div>
-                </div>
-                
-                <div class="menu-item dropdown">
-                    <span class="dropdown-toggle">Record Management</span>
-                    <div class="dropdown-content">
-                        <a href="issuance-record.html">Issuance Record</a>
-              <a href="complain.html">Complain</a>
-              <a href="appointmentsRecord.html">Appointment Record</a>
-              <a href="capAvailability.html">Availability</a>
-              <a href="barangayInventory.html">Inventory Management</a>
-                    </div>
-                </div>
-                <div class="menu-item"><a href="settings.html">Setiings</a></div>
-                <div class="menu-item"><a href="./../index.html">Logout</a></div>
+              <div class="menu-item active">
+                <a href="barangay-dashboard.html">Dashboard</a>
+              </div>
+    
+              <div class="menu-item">
+                <a href="issuance-record.html">Issuance Record</a>
+              </div>
+              <div class="menu-item"><a href="complain.html">Complain</a></div>
+              <div class="menu-item">
+                <a href="appointments.html">Appointment Schedule</a>
+              </div>
+              <div class="menu-item">
+                <a href="inventory.html">Inventory Management</a>
+              </div>
+    
+              <div class="menu-item"><a href="settings.html">Setiings</a></div>
+              <div class="menu-item"><a href="./../index.html">Logout</a></div>
             </div>
         </div>
         
@@ -85,6 +77,21 @@
               
                   <label for="age">Age</label>
                   <input type="number" id="age" required>
+              
+                  <label for="gender">Gender</label>
+                  <select id="gender" required>
+                    <option value="">-- Select --</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+              
+                  <label for="civilStatus">Civil Status</label>
+                  <select id="civilStatus" required>
+                    <option value="">-- Select --</option>
+                    <option>Single</option>
+                    <option>Married</option>
+                    <option>Widowed</option>
+                  </select>
               
                   <label for="address">Address / Purok</label>
                   <input type="text" id="address" required>

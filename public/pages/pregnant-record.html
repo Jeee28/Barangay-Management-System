@@ -25,31 +25,23 @@
           <img src="./../assets/logo/logo.jpg" alt="Barangay Logo" class="logo" />
         </div>
         <div class="menu-items">
-          <div class="menu-item active">
-            <a href="dashboard.html">Dashboard</a>
+          <div class="menu-item">
+            <a href="healthcare-dashboard.html">Dashboard</a>
           </div>
 
-          <div class="menu-item dropdown">
-            <span class="dropdown-toggle">Healthcare Management</span>
-            <div class="dropdown-content">
-              <a href="children-record.html">Children Record</a>
-              <a href="pregnant-record.html">Pregnant Record</a>
-              <a href="household-record.html">Household Record</a>
-              <a href="healthcare_inventory.html"> Inventory Records</a>
-            </div>
+          <div class="menu-item">
+            <a href="children-record.html">Children Record</a>
+          </div>
+          <div class="menu-item">
+            <a href="pregnant-record.html">Pregnant Record</a>
+          </div>
+          <div class="menu-item">
+            <a href="household-record.html">Household Record</a>
+          </div>
+          <div class="menu-item">
+            <a href="healthcare_inventory.html"> Inventory Records</a>
           </div>
 
-          <div class="menu-item dropdown">
-            <span class="dropdown-toggle">Record Management</span>
-            <div class="dropdown-content">
-            
-              <a href="issuance-record.html">Issuance Record</a>
-              <a href="complain.html">Complain</a>
-              <a href="appointmentsRecord.html">Appointment Record</a>
-              <a href="capAvailability.html">Availability</a>
-              <a href="barangayInventory.html">Inventory Management</a>
-            </div>
-          </div>
           <div class="menu-item"><a href="settings.html">Setiings</a></div>
           <div class="menu-item">
             <a href="#" onclick="confirmLogout()">Logout</a>
@@ -130,126 +122,13 @@
             >
               <thead>
                 <tr>
-                  <th>Company</th>
+                  <th>Name</th>
                   <th>Contact</th>
-                  <th>Country</th>
+                  <th>Address</th>
                   <th>Action</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td>Alfreds Futterkiste</td>
-                  <td>Maria Anders</td>
-                  <td>Germany</td>
-                  <td>
-                    <a href="#" data-bs-toggle="tooltip" title="View">
-                      <i class="bi bi-eye text-primary fs-5"></i>
-                    </a>
-                    <a href="#" data-bs-toggle="tooltip" title="Edit">
-                      <i class="bi bi-pencil-square text-success fs-5"></i>
-                    </a>
-                    <a href="#" data-bs-toggle="tooltip" title="Delete">
-                      <i class="bi bi-trash3 text-danger fs-5"></i>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Centro comercial Moctezuma</td>
-                  <td>Francisco Chang</td>
-                  <td>Mexico</td>
-                  <td>
-                    <a href="#" data-bs-toggle="tooltip" title="View">
-                      <i class="bi bi-eye text-primary fs-5"></i>
-                    </a>
-                    <a href="#" data-bs-toggle="tooltip" title="Edit">
-                      <i class="bi bi-pencil-square text-success fs-5"></i>
-                    </a>
-                    <a href="#" data-bs-toggle="tooltip" title="Delete">
-                      <i class="bi bi-trash3 text-danger fs-5"></i>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Ernst Handel</td>
-                  <td>Roland Mendel</td>
-                  <td>Austria</td>
-                  <td>
-                    <a href="#" data-bs-toggle="tooltip" title="View">
-                      <i class="bi bi-eye text-primary fs-5"></i>
-                    </a>
-                    <a href="#" data-bs-toggle="tooltip" title="Edit">
-                      <i class="bi bi-pencil-square text-success fs-5"></i>
-                    </a>
-                    <a href="#" data-bs-toggle="tooltip" title="Delete">
-                      <i class="bi bi-trash3 text-danger fs-5"></i>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Island Trading</td>
-                  <td>Helen Bennett</td>
-                  <td>UK</td>
-                  <td>
-                    <a href="#" data-bs-toggle="tooltip" title="View">
-                      <i class="bi bi-eye text-primary fs-5"></i>
-                    </a>
-                    <a href="#" data-bs-toggle="tooltip" title="Edit">
-                      <i class="bi bi-pencil-square text-success fs-5"></i>
-                    </a>
-                    <a href="#" data-bs-toggle="tooltip" title="Delete">
-                      <i class="bi bi-trash3 text-danger fs-5"></i>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Laughing Bacchus Winecellars</td>
-                  <td>Yoshi Tannamuri</td>
-                  <td>Canada</td>
-                  <td>
-                    <a href="#" data-bs-toggle="tooltip" title="View">
-                      <i class="bi bi-eye text-primary fs-5"></i>
-                    </a>
-                    <a href="#" data-bs-toggle="tooltip" title="Edit">
-                      <i class="bi bi-pencil-square text-success fs-5"></i>
-                    </a>
-                    <a href="#" data-bs-toggle="tooltip" title="Delete">
-                      <i class="bi bi-trash3 text-danger fs-5"></i>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                    <td>Laughing Bacchus Winecellars</td>
-                    <td>Yoshi Tannamuri</td>
-                    <td>Canada</td>
-                    <td>
-                      <a href="#" data-bs-toggle="tooltip" title="View">
-                        <i class="bi bi-eye text-primary fs-5"></i>
-                      </a>
-                      <a href="#" data-bs-toggle="tooltip" title="Edit">
-                        <i class="bi bi-pencil-square text-success fs-5"></i>
-                      </a>
-                      <a href="#" data-bs-toggle="tooltip" title="Delete">
-                        <i class="bi bi-trash3 text-danger fs-5"></i>
-                      </a>
-                    </td>
-                  </tr>
-                <tr>
-                  <td>Magazzini Alimentari Riuniti</td>
-                  <td>Giovanni Rovelli</td>
-                  <td>Italy</td>
-                  <td>
-                    <a href="#" data-bs-toggle="tooltip" title="View">
-                      <i class="bi bi-eye text-primary fs-5"></i>
-                    </a>
-                    <a href="#" data-bs-toggle="tooltip" title="Edit">
-                      <i class="bi bi-pencil-square text-success fs-5"></i>
-                    </a>
-                    <a href="#" data-bs-toggle="tooltip" title="Delete">
-                      <i class="bi bi-trash3 text-danger fs-5"></i>
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
+              
             </table>
           </div>
         </div>

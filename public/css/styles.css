@@ -195,10 +195,18 @@ button:hover {
     
     nav ul {
         flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
     }
     
     nav ul li {
         margin: 5px;
+    }
+
+    li a{
+        padding: 0;
     }
     
     .hero {
